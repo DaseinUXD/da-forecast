@@ -1,0 +1,32 @@
+{
+  "name": "da-forecast",
+  "version": "1.0.0",
+  "description": "Weather forecast for Digital Alchemy PSM emails using forecast.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaseinUXD/da-forecast.git"
+  },
+  "keywords": [
+    "forecast",
+    "weather"
+  ],
+  "author": "Mark W. Matthews",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaseinUXD/da-forecast/issues"
+  },
+  "homepage": "https://github.com/DaseinUXD/da-forecast#readme",
+  "dependencies": {
+    "debug": "^2.6.6",
+    "jquery": "^3.2.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.3.0",
+    "should": "^11.2.1"
+  }
+}
