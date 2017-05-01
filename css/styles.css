@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Montserrat:400,700);
+
+html{
+  color:#455646;
+  background-color:#f1f4f1;
+}
+
+.content {
+  font-family: 'Lato', 'sans-serif';
+  margin-left: 30%;
+}
+
+#main-header {
+  margin-left: 30%;
+}
+
+.btn {
+  color:#f1f4f1;
+  background-color:#8e6fb8;
+  decoration: none;
+  padding: 15px;
+  border: none;
+  display: inline-block;
+  visibility: hidden;
+}
+
+.bb {
+  float:right;
+}
+
+.side-nav {
+
+}
+
+.side-nav-mask {
+  visibility: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background:#92d6d8;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  opacity: .4;
+}
+
+.side-nav {
+  visibility: hidden;
+  position: fixed;
+  height: 100%;
+  width: 25%;
+  background:#92d6d8;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  color:#f1f4f1;
+}
+
+.side-nav-content {
+  margin: 10px;
+}
+
+.visible{
+  visibility: visible;
+}
+
+form {
+  display: block;
+  color:#455642;
+}
+
+form p {
+  color:#f1f4f1;
+}
