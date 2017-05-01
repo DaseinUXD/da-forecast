@@ -1,6 +1,6 @@
 {
   "name": "da-forecast",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Weather forecast for Digital Alchemy PSM emails using forecast.io",
   "main": "./src/index.js",
   "scripts": {
