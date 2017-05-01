@@ -1,94 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <!--External Styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!-- Internal Styles -->
-	<style>
-        @media (max-width: 62em) {
-            .navbar-nav {
-                padding-top: .425rem;
-                padding-left: 0.75rem;
-            }
-            .navbar-nav .nav-item {
-                float: none;
-            }
-            .navbar-brand {
-                float: right;
-            }
-            .navbar-brand,
-            .navbar-nav .nav-item {
-                display: block;
-            }
-            .navbar-nav .nav-item + .nav-item {
-                margin-left: 0;
-            }
-            .dropdown-menu {
-                position: relative;
-                float: none;
-            }
-        }
-    </style>
-    <!-- External Scripts -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    
-    <!-- Internal Scripts -->
-	<script type="text/javascript" src="">
-	</script>
-
-    <title>Bootsrap Shell With Navabar</title>
-
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
 </head>
 
 <body>
-   
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-       
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Navbar</a>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
-                </li>
-                <!-- Dropdown - Delete from this comment to the next if you don't want it -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separted</a>
+    <div class="container">
+        <form>
+            <fieldset class="form-group row">
+                <legend>DarkSky API Settings</legend>
+                <div class="form-group row">
+                    <label for="apiKey" class="col-sm-1 col-form-label">API Key</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" name="apiKey" id="apiKey" placeholder="">
                     </div>
-                </li>
-            </ul>
-        </div>
-    
-    </nav>
-
-	<div class="container-fluid">
-        
-	</div>
-
-
+                </div>
+                <div class="form-group row">
+                    <label for="latitude" class="col-sm-1 col-form-label">Latitude</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control"
+                            name="latitude" id="latitude" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="longitude" class="col-sm-1 col-form-label">Longitude</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control"
+                            name="longitude" id="longitude" placeholder="">
+                    </div>
+                </div>
+                <fieldset class="form-group">
+                    <legend>Report Type</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Current weather.
+      </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        Forecasted weather.
+      </label>
+                    </div>
+                </fieldset>
+               <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
