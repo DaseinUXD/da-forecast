@@ -1,0 +1,6 @@
+/*Babel Transpile Settings */
+{
+  "presets": [
+    "latest"
+  ]
+}
